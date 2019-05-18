@@ -1,7 +1,21 @@
-import { h } from "preact";
+import { h, Component } from "preact";
 
-export default ({ name, hexColor }) => (
-  <div class="c-color-block" style={`background-color: ${hexColor};`}>
+let lastTimeout = null;
+
+export default ({ name, hexColor, setName }) => (
+  <div
+    class="c-color-block"
+    style={`background-color: ${hexColor};`}
+    onClick={() => {
+      if (lastTimeout) clearTimeout(lastTimeout);
+
+      navigator.clipboard.writeText(hexColor.slice(1)).catch(console.error);
+
+      setName(name);
+
+      lastTimeout = setTimeout(() => setName(), 2500);
+    }}
+  >
     <h2 class="c-color-block__name">
       {name} <code>{hexColor}</code>
     </h2>
