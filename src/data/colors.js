@@ -23,11 +23,11 @@ export const paleGold300 = "#f8d8c1";
 export const paleGold400 = "#e9bb9e";
 export const paleGold500 = "#d9a380";
 
-export const duststorm100 = "#f5ebe8";
-export const duststorm200 = "#efdfd8";
-export const duststorm300 = "#e6ccc1";
-export const duststorm400 = "#ddb9ab";
-export const duststorm500 = "#b5988c";
+export const dustStorm100 = "#f5ebe8";
+export const dustStorm200 = "#efdfd8";
+export const dustStorm300 = "#e6ccc1";
+export const dustStorm400 = "#ddb9ab";
+export const dustStorm500 = "#b5988c";
 
 export const rose100 = "#f7f2f3";
 export const rose200 = "#f0e5e7";
@@ -77,11 +77,11 @@ export const tan300 = "#ddd4ad";
 export const tan400 = "#d1c289";
 export const tan500 = "#bcb079";
 
-export const timberwolf100 = "#f5f1ed";
-export const timberwolf200 = "#ebe4dc";
-export const timberwolf300 = "#dbcfc0";
-export const timberwolf400 = "#c4b6a5";
-export const timberwolf500 = "#a89a88";
+export const timberWolf100 = "#f5f1ed";
+export const timberWolf200 = "#ebe4dc";
+export const timberWolf300 = "#dbcfc0";
+export const timberWolf400 = "#c4b6a5";
+export const timberWolf500 = "#a89a88";
 
 export const gainsboro100 = "#f2f2f2";
 export const gainsboro200 = "#e5e5e5";
