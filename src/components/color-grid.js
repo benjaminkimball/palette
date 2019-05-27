@@ -1,9 +1,9 @@
-import React from "react";
+import { h } from "preact";
 
 import ColorBlock from "./color-block";
 
 export default ({ colors, setName }) => (
-  <div className="c-color-grid">
+  <div class="c-color-grid">
     {Object.entries(colors).map(([name, hexColor]) => (
       <ColorBlock
         key={name}

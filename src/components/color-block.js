@@ -1,10 +1,10 @@
-import React from "react";
+import { h } from "preact";
 
 let lastTimeout = null;
 
 export default ({ name, hexColor, setName }) => (
   <div
-    className="c-color-block"
+    class="c-color-block"
     style={{ backgroundColor: hexColor }}
     onClick={() => {
       if (lastTimeout) clearTimeout(lastTimeout);
@@ -16,7 +16,7 @@ export default ({ name, hexColor, setName }) => (
       lastTimeout = setTimeout(() => setName(), 2500);
     }}
   >
-    <h2 className="c-color-block__name">
+    <h2 class="c-color-block__name">
       {name} <code>{hexColor}</code>
     </h2>
   </div>

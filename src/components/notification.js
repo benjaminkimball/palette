@@ -1,11 +1,11 @@
-import React from "react";
+import { h } from "preact";
 
 export default ({ name }) => {
   if (!name) return null;
 
   return (
-    <div className="c-notification">
-      <div className="c-notification__body">
+    <div class="c-notification">
+      <div class="c-notification__body">
         <strong>{name} copied to clipboard!</strong>
       </div>
     </div>
