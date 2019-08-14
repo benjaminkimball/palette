@@ -1,9 +1,9 @@
-image: node:10.15.3
+image: node:10.16.2
 
 pages:
   script:
-    - npm ci
-    - npm run build
+    - yarn install
+    - yarn build
   artifacts:
     paths:
       - public
