@@ -5,6 +5,11 @@
   "description": "Quick reference for a \"heavily borrowed\" color palette.",
   "scripts": {
     "build": "parcel build src/index.html --out-dir docs --public-url /palette",
+    "format": "prettier --write src/**/*",
+    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint:scripts": "eslint src/**/*.js",
+    "lint:styles": "stylelint src/**/*.css",
+    "publish": "npm run lint && npm run build",
     "start": "parcel src/index.html --out-dir docs"
   },
   "repository": {
@@ -21,6 +26,22 @@
     "preact": "^10.0.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "acorn": "^7.1.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-jsx": "^8.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.18.2",
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0"
   }
 }
