@@ -17,7 +17,7 @@
     "url": "git+ssh://git@github.com:benjaminkimball/palette.git"
   },
   "author": "Benjamin Kimball <hello@benjaminkimball.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/benjaminkimball/palette/issues"
   },
