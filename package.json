@@ -10,7 +10,8 @@
     "lint:scripts": "eslint src/**/*.js",
     "lint:styles": "stylelint src/**/*.css",
     "publish": "npm run lint && npm run build",
-    "start": "parcel src/index.html --out-dir docs"
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
