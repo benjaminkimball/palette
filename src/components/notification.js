@@ -1,13 +1,20 @@
-import { h } from "preact";
+import React from "react";
+import { string } from "prop-types";
 
-export default ({ name }) => {
+const Notification = ({ name }) => {
   if (!name) return null;
 
   return (
-    <div class="c-notification">
-      <div class="c-notification__body">
+    <div className="c-notification">
+      <div className="c-notification__body">
         <strong>{name} copied to clipboard!</strong>
       </div>
     </div>
   );
 };
+
+Notification.propTypes = {
+  name: string
+};
+
+export default Notification;
