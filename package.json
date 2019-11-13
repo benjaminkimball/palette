@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "palette",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Quick reference for a \"heavily borrowed\" color palette.",
   "scripts": {
     "build": "parcel build src/index.html --out-dir docs --public-url /palette",
