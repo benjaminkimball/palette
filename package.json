@@ -5,13 +5,12 @@
   "description": "Quick reference for a \"heavily borrowed\" color palette.",
   "scripts": {
     "build": "parcel build src/index.html --out-dir docs --public-url /palette",
-    "format": "prettier --write src/**/*",
+    "format": "prettier --write 'src/**/*'",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint src/**/*.js",
     "lint:styles": "stylelint src/**/*.css",
     "publish": "rimraf docs && npm run lint && npm run build",
-    "start": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -24,17 +23,14 @@
   },
   "homepage": "https://github.com/benjaminkimball/palette#readme",
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "preact": "^10.0.5"
   },
   "devDependencies": {
-    "acorn": "^7.1.0",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.4.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
+    "eslint-config-standard-jsx": "^8.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.1",
@@ -43,7 +39,7 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
     "stylelint": "^11.1.1",
     "stylelint-config-standard": "^19.0.0"

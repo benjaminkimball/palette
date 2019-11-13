@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
+import { h, Fragment, render } from "preact";
+import { useState } from "preact/hooks";
 
 import * as colors from "./data/colors";
 
@@ -10,11 +10,13 @@ const App = () => {
   const [name, setName] = useState();
 
   return (
-    <>
+    <Fragment>
       <Notification name={name} />
       <ColorGrid colors={colors} setName={setName} />
-    </>
+    </Fragment>
   );
 };
 
-render(<App />, document.getElementById("root"));
+const rootEl = document.getElementById("root");
+
+render(<App />, rootEl, rootEl.lastChild);
