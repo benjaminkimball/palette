@@ -1,10 +1,10 @@
-import { h } from "preact";
+import React from "react";
 
 let lastTimeout = null;
 
 const ColorBlock = ({ name, hexColor, setName }) => (
   <div
-    class="c-color-block"
+    className="c-color-block"
     style={{ backgroundColor: hexColor }}
     onClick={() => {
       if (lastTimeout) clearTimeout(lastTimeout);
@@ -16,7 +16,7 @@ const ColorBlock = ({ name, hexColor, setName }) => (
       lastTimeout = setTimeout(() => setName(), 2500);
     }}
   >
-    <h2 class="c-color-block__name">
+    <h2 className="c-color-block__name">
       {name} <code>{hexColor}</code>
     </h2>
   </div>
